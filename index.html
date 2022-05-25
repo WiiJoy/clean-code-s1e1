@@ -6,30 +6,30 @@
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 <body class="root">
-  <div class="info">
+  <section class="info">
     <img class="info__img" src="./eisenhower-matrix.jpg">
     <a class="info__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-  </div>
-  <div class="main">
-    <p class="add-item" id="add-item">
-      <label class="add-item__label" for="new-task">Add Item</label>
+  </section>
+  <main class="main">
+    <section class="add-item" id="add-item">
+      <h3 class="add-item__label" for="new-task">Add Item</h3>
       <div class="new-task">
         <input id="new-task" class="input input__task" type="text">
         <button class="btn">Add</button>
       </div>
-    </p>
+    </section>
     <h3 class="title">Todo</h3>
     <ul class="tasks" id="incomplete-tasks">
       <li class="tasks__item">
         <input class="input input__check" type="checkbox">
-        <label class="tasks__item__label">Pay Bills</label>
+        <article class="tasks__item__label">Pay Bills</article>
         <input type="text" class="input input__task">
         <button class="btn btn_edit">Edit</button>
         <button class="btn btn_delete"><img class="delete__icon" src="./remove.svg"></button>
       </li>
       <li class="tasks__item tasks__item_edit">
         <input class="input" type="checkbox">
-        <label class="tasks__item__label">Go Shopping</label>
+        <article class="tasks__item__label">Go Shopping</article>
         <input type="text" value="Go Shopping" class="input input__task">
         <button class="btn btn_edit">Save</button>
         <button class="btn btn_delete"><img class="delete__icon" src="./remove.svg"></button></li>
@@ -38,13 +38,13 @@
     <ul class="tasks tasks_completed" id="completed-tasks">
       <li class="tasks__item">
         <input class="input" type="checkbox" checked>
-        <label class="tasks__item__label">See the Doctor</label>
+        <article class="tasks__item__label">See the Doctor</article>
         <input type="text" class="input input__task">
         <button class="btn btn_edit">Edit</button>
         <button class="btn btn_delete"><img class="delete__icon" src="./remove.svg"></button>
       </li>
     </ul>
-  </div>
+  </main>
   <script src="app.js"></script>
 </body>
 </html>
